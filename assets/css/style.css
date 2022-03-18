@@ -10,6 +10,7 @@ body {
   font-family: "Be Vietnam Pro", sans-serif !important;
   font-family: "Dancing Script", cursive !important;
   font-family: "Hubballi", cursive !important;
+  overflow: hidden;
 }
 
 .navbar-brand {
@@ -36,31 +37,68 @@ body {
 .nav-link:hover {
   color: red !important;
 }
-.content{
-    height: 100vh;
-    width: 100%;
-    background-image: url(../img/homepizza.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
+.content {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../img/homepizza.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
 }
-.content-text{
-    padding-top: 30%;
+.content-text {
+  padding-top: 15%;
 }
-.welcoment{
+.welcoment {
   font-size: 8rem;
   font-weight: 800;
   color: black;
+  /* background: rgb(252, 235, 235); */
 }
-.welcoment span{
+.welcoment span {
   font-family: "Dancing Script", cursive;
   font-size: 10rem;
 }
-.spn1{
+.spn1 {
   color: red;
 }
-.wlc{
+.wlc {
   font-size: 4rem;
-  color:white;
+  color: white;
   font-weight: 800;
+}
+.about-us {
+  height: 92vh;
+  width: 100%;
+  border: 3px solid white;
+
+}
+
+.pizzagif {
+  height: 19cm;
+}
+hr {
+  color: rgb(255, 0, 0);
+}
+.about-us h1{
+  font-size: 3rem;
+  font-weight: 800;
+}
+.values{
+  font-weight: 800;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.values p{
+  padding-top: 10%;
+}
+.values h4{
+  font-weight: 800;
+  font-size: 2.8rem;
+  color: red;
+  padding-top: 5%;
+}
+.valist{
+  font-size: 1.9rem;
+  font-weight: 600;
+  list-style: none;
 }
