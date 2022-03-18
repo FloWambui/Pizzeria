@@ -2,11 +2,36 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 body {
-  background-color: black;
+  /* background-color: black; */
   color: white;
-  font-family: "Be Vietnam Pro", sans-serif;
+  font-family: "Be Vietnam Pro", sans-serif !important;
+  font-family: "Dancing Script", cursive !important;
+  font-family: "Hubballi", cursive !important;
+}
+.navbar-brand {
   font-family: "Dancing Script", cursive;
-  font-family: "Hubballi", cursive;
+  font-size: 2.5rem;
+}
+.navbar-brand span {
+  color: red;
+}
+.homebtn {
+  background-color: red;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: 800;
+}
+.list {
+  margin-left: 50%;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.nav-link:hover {
+  color: red !important;
 }
