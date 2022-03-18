@@ -39,6 +39,7 @@
       href="/Pizzeria/assets/img/favicon.jpeg"
       type="image/x-icon"
     />
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
   </head>
   <body>
     <!-- Navigation Bar -->
@@ -63,10 +64,12 @@
           >
             <ul class="navbar-nav list ml-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#home"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">About Us</a>
+                <a class="nav-link active" href="#about">About Us</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" href="#">Our Menu</a>
@@ -83,11 +86,38 @@
       </nav>
     </div>
     <!-- Home Page -->
-    <div class="container content">
+    <div class="container-fluid content" id="home">
       <div class="content-text">
-        <h1 class="welcoment">Welcome to<span>Pizz<span class="spn1">eria</span></span> </h1>
+        <h1 class="welcoment">
+          Welcome to<span>Pizz<span class="spn1">eria</span></span>
+        </h1>
         <p class="wlc">Yummy Pizza In my Tummy....</p>
         <!-- &#127829 -->
+      </div>
+    </div>
+
+    <!-- About Us -->
+    <div class="container-fluid about-us" id="about">
+      <h1 class="text-center">About Us.</h1>
+      <hr class="underline w-50 mx-auto pb-1">
+      <div class="row">
+        <div class="col-lg-6 col-sm-12">
+          <img
+            src="/Pizzeria/assets/img/aboutus.jpg"
+            class="img-fluid pizzagif"
+            alt="pizza giphy"
+          />
+        </div>
+        <div class="col-lg-6 col-sm-12 values">
+          <p>Founded in 2000, in the heart of the leafy suburbs of Loresho, Pizzeria is a pizza haven created to craft finger licking pizza with the taste of Italy. Our flavors are just like <em>"a mother's taste."</em><br>With over 10 branches across the city of Nairobi, Our promise is to deliver yummy finger-licking pizza with locally sourced ingredients to satisfy your craving.</p>
+          <h4>Our Values:</h4>
+          <ul class="valist">
+            <li><span class="iconify" data-icon="fa6-solid:pizza-slice" style="color: red;" data-width="50" data-height="50"></span> Finger-Licking Good.</li>
+            <li><span class="iconify" data-icon="carbon:delivery" style="color: red;" data-width="50" data-height="50"></span> Fast delivery.</li>
+            <li><span class="iconify" data-icon="ic:outline-room-service" style="color: red;" data-width="50" data-height="50"></span>Made to Perfection.</li>
+            <button class="btn homebtn">Order Now</button>
+          </ul>
+        </div>
       </div>
     </div>
 
