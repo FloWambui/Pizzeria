@@ -70,6 +70,7 @@ body {
 .about-us {
   height: 92vh;
   width: 100%;
+  overflow-y: hidden;
 }
 
 .pizzagif {
@@ -103,19 +104,23 @@ hr {
 }
 .menu {
   height: 92vh;
+  overflow-y: hidden;
 }
 .menu h1 {
   font-size: 3rem;
   font-weight: 800;
 }
 .card{
-  /* background-color: black; */
+  background-color: black;
   border: 3px solid white;
-  height: 28rem;
+  height: 40rem;
   font-weight: 600;
   font-size: 1.2rem;
 }
 .card h4{
   font-size: 1.5rem;
   font-weight: 800;
+}
+.item img{
+  height: 20rem;
 }
