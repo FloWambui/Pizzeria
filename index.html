@@ -238,7 +238,7 @@
     <div class="row">
       <div class="col-lg-6 c0l-md-6 col-sm-12 orderform">
         <form action="">
-          <label for="select">Pizza Flavor</label>
+          <label for="pizza-flavor">Pizza Flavor</label>
           <select class="form-select flavor" id="flavor" aria-label="Default select example">
             <option selected>..........</option>
             <option value="Hawaiian">Hawaiian Pizza</option>
@@ -250,14 +250,14 @@
             <option value="Neopolitan">Neopolitan</option>
             <option value="Chefs' Special">Chefs' Special</option>
           </select>
-          <label for="select">Pizza Size</label>
+          <label for="pizza-size">Pizza Size</label>
           <select class="form-select size" id="size" aria-label="Default select example">
             <option selected>..........</option>
             <option value="Large">Large @ 1,200</option>
             <option value="Medium">Medium @ 900</option>
             <option value="Small">Small @ 500</option>
           </select>
-          <label for="select">Pizza Crust</label>
+          <label for="pizza-crust">Pizza Crust</label>
           <select class="form-select crust" id="crust" aria-label="Default select example">
             <option selected>..........</option>
             <option value="Gluten Free">Gluten Free @ 200</option>
@@ -265,6 +265,28 @@
             <option value="Stuffed">Stuffed @ 180</option>
 
           </select>
+          <label for="pizza-topping">Pizza Toppings @ shs. 100 each</label><br>
+          <div class="custom-control custom-checkbox custom-control-inline">
+            <input type="checkbox" class="custom-control-input" id="extracheese" value="Extra Cheese"
+              name="pizza-toppings">
+            <label class="custom-control-label" for="Extra Cheese">Extra Cheese</label>
+          </div>
+          <div class="custom-control custom-checkbox custom-control-inline">
+            <input type="checkbox" class="custom-control-input" id="blackolives" value="Black Olives"
+              name="pizza-toppings">
+            <label class="custom-control-label" for="Black Olives">Black Olives</label>
+          </div>
+          <div class="custom-control custom-checkbox custom-control-inline">
+            <input type="checkbox" class="custom-control-input" id="extraonions" value="Extra Onions"
+              name="pizza-toppings">
+            <label class="custom-control-label" for="Extra Cheese">Extra Onions</label>
+          </div>
+          <div class="custom-control custom-checkbox custom-control-inline">
+            <input type="checkbox" class="custom-control-input" id="bbqsauce" value="BBQ Sauce"
+              name="pizza-toppings">
+            <label class="custom-control-label" for="BBQ Sauce">BBQ Sauce</label>
+          </div>
+
         </form>
       </div>
     </div>
