@@ -138,3 +138,36 @@ hr {
 .icons{
   color: red;
 }
+.ordernow{
+  height: 92vh;
+}
+.ordernow h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+label{
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 8px 0px;
+  padding-left: 20px;
+}
+select{
+  height: 1.2cm;
+  width: 10rem;
+  
+}
+form{
+  border: 3px solid white;
+  border-radius: 10px;
+  height: 80vh;
+  width: 80%;
+  margin-left: 20px;
+}
+.placeorder{
+  font-size: 1.2rem;
+  font-weight: 800;
+  width: 10cm;
+  margin-top: 30px;
+  margin-left: 25%;
+   
+}
