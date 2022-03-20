@@ -171,3 +171,8 @@ form{
   margin-left: 25%;
    
 }
+.ordertable{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white !important;
+}

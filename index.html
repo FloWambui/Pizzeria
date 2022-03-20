@@ -282,13 +282,40 @@
             <label class="custom-control-label" for="Extra Cheese">Extra Onions</label>
           </div>
           <div class="custom-control custom-checkbox custom-control-inline">
-            <input type="checkbox" class="custom-control-input" id="bbqsauce" value="BBQ Sauce"
-              name="pizza-toppings">
+            <input type="checkbox" class="custom-control-input" id="bbqsauce" value="BBQ Sauce" name="pizza-toppings">
             <label class="custom-control-label" for="BBQ Sauce">BBQ Sauce</label>
           </div>
           <button type="submit" class="btn btn-danger placeorder">Place Order</button>
+        </form>  
+      </div>
 
-        </form>
+      <div class="col-lg-6 c0l-md-6 col-sm-12">
+        <div class="order-summary">
+          <h2>Order Details:</h2>
+          <div id="your-order">
+            <table class="table table-sm ordertable">
+              <thead>
+                <tr>
+                  <th scope="col">Flavor</th>
+                  <th scope="col">Size</th>
+                  <th scope="col">Crust</th>
+                  <th scope="col">Toppings</th>
+                  <th scope="col">Amount</th>
+                </tr>
+              </thead>
+              <tbody id="placedorder">
+                <tr>
+                  <td id="pizzaname"></td>
+                  <td id="pizzasize"></td>
+                  <td id="pizzacrust"></td>
+                  <td id="pizzatopping"></td>
+                  <td id="totals"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
