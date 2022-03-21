@@ -180,3 +180,6 @@ form{
   margin-top: 10%;
   height: 7cm;
 }
+.order-summary, .delivery{
+  display: none;
+}
