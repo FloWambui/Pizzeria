@@ -154,9 +154,19 @@ $(document).ready(function(){
             console.log(checkoutTotal);
 
             var newOrder = new GetPizza(pname, psize, pcrust,ptopping, total);
+            $("#placedorder").append('<tr><td id="pizzaname">'+newOrder.name +'</td><td id="pizzasize">'+newOrder.size+'</td><td id="pizzacrust">'+newOrder.crust+'</td><td id ="pizzatopping">'+newOrder.topping+'</td><td id="totals">'+newOrder.total+'</td></tr>');
+            console.log(newOrder);
 
-            
-        })
+        });
+        $("button#checkout").click(function(){
+            $("button#checkout").hide();
+            $("button.addOrder").hide();
+            $("button.deliverychoice").slideDown(1000);
+            $("#addedprice").slideDown(1000);
+            console.log("Your total bill is Kshs." +checkoutTotal);
+            $("#pizzatotal").append("Your bill is Ksh." +checkoutTotal);
+        });
+        
     })
 
 })
