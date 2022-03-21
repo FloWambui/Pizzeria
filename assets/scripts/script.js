@@ -166,7 +166,41 @@ $(document).ready(function(){
             console.log("Your total bill is Kshs." +checkoutTotal);
             $("#pizzatotal").append("Your bill is Ksh." +checkoutTotal);
         });
-        
-    })
+        $("button.deliverychoice").click(function(){
+            $(".ordertable").hide();
+            $(".order-summary h2").hide();
+            $(".delivery").slideDown(1000);
+            $("#deliverycost").hide();
+            $("button.deliverychoce").hide();
+            $("#ttlpizza").hide();
+            let deliveryamount=checkoutTotal+200;
+            console.log("You will pay Kshs. "+deliveryamount+" upon delivery" );
+            $("#ttlbill").append("Bill inclusive of delivery - Kshs." +deliveryamount);
+        });
+        $("button.send-order").click(function(event){
+            event.preventDefault();
 
-})
+            $("#ttlpizza").hide();
+            $(".delivery").hide();
+            $("button.send-order").hide();
+            let deliveryamount = checkoutTotal+200;
+            console.log("Billable Amount: Kshs."+deliveryamount);
+            let person = $("input#name").val();
+            let phone = $("input#phone").val();
+            let location = $("input#location").val();
+
+            if ($("input#name").val() && $("input#phone").val() && $("input#location").val()!==""){
+                $("respone").append("Dear" +person+ "We have received yor order and it will be delivered to you at" +location+".Prepare Kshs"+deliveryamount);
+                $(("#ttlbill")).hide();
+                $("#response").slideDown(1400);
+            }
+            else{
+                alert("Please fill all fields!");
+                $(".delivery").show();
+                $("button#send-order").show();
+            }
+        });
+        event.preventDefault();
+    });
+
+});
